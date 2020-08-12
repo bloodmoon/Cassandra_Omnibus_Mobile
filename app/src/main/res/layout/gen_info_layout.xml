@@ -5,12 +5,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <!-- Patch Notes Text View-->
     <TextView
-        android:id="@+id/patch_notes_tview"
+        android:id="@+id/gen_info_heading"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:text="@string/patch_notes"
+        android:fontFamily="@font/soul"
+        android:text="@string/gen_info"
+        android:textSize="76sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -28,7 +31,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.589"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/patch_notes_tview">
+        app:layout_constraintTop_toBottomOf="@+id/gen_info_heading">
 
         <!--LinearLayout Container for multiple children in ScrollView-->
        <LinearLayout
@@ -369,14 +372,786 @@
                        android:padding="3dip"
                        android:text="@string/general_sys_terms" />
                </TableRow>
+
+               <TableRow
+                   android:layout_width="match_parent"
+                   android:layout_height="0dp"
+                   android:layout_weight="1"
+                   android:background="#e4f2fb" >
+
+                   <!--8WR-->
+                   <TextView
+                       android:layout_weight=".3"
+                       android:layout_width="0dp"
+                       android:gravity="end"
+                       android:padding="3dip"
+                       android:text="@string/_8wr" />
+                   <TextView
+                       android:layout_weight=".4"
+                       android:layout_width="0dp"
+                       android:padding="3dip" />
+                   <TextView
+                       android:layout_weight=".5"
+                       android:layout_width="0dp"
+                       android:padding="3dip"
+                       android:text="@string/_8_way_run" />
+               </TableRow>
+
+               <!--Break Attack-->
+               <TableRow
+                   android:layout_width="match_parent"
+                   android:layout_height="0dp"
+                   android:layout_weight="1" >
+                   <TextView
+                       android:layout_weight=".3"
+                       android:layout_width="0dp"
+                       android:gravity="end"
+                       android:padding="3dip"
+                       android:text="BA" />
+                   <TextView
+                       android:layout_weight=".4"
+                       android:layout_width="0dp"
+                       android:padding="3dip" />
+                   <TextView
+                       android:layout_weight=".5"
+                       android:layout_width="0dp"
+                       android:padding="3dip"
+                       android:text="Break Attack" />
+               </TableRow>
+
+               <!--Just Frame-->
+               <TableRow
+                   android:layout_width="match_parent"
+                   android:layout_height="0dp"
+                   android:layout_weight="1"
+                   android:background="#e4f2fb" >
+
+                   <TextView
+                       android:layout_weight=".3"
+                       android:layout_width="0dp"
+                       android:gravity="end"
+                       android:padding="3dip"
+                       android:text="JF" />
+                   <TextView
+                       android:layout_weight=".4"
+                       android:layout_width="0dp"
+                       android:padding="3dip"
+                       />
+                   <TextView
+                       android:layout_weight=".5"
+                       android:layout_width="0dp"
+                       android:padding="3dip"
+                       android:text="Just Frame" />
+               </TableRow>
+
+               <!--MicroStepR-->
+               <TableRow
+                   android:layout_width="match_parent"
+                   android:layout_height="0dp"
+                   android:layout_weight="1" >
+
+                   <TextView
+                       android:layout_weight=".3"
+                       android:layout_width="0dp"
+                       android:gravity="end"
+                       android:padding="3dip"
+                       android:text="MSR" />
+                   <TextView
+                       android:layout_weight=".4"
+                       android:layout_width="0dp"
+                       android:padding="3dip"
+                       />
+                   <TextView
+                       android:layout_weight=".5"
+                       android:layout_width="0dp"
+                       android:padding="3dip"
+                       android:text="Micro Step Right" />
+               </TableRow>
+
+               <!--MicroStepL-->
+               <TableRow
+                   android:background="#e4f2fb"
+                   android:layout_width="match_parent"
+                   android:layout_height="0dp"
+                   android:layout_weight="1" >
+
+                   <TextView
+                       android:layout_weight=".3"
+                       android:layout_width="0dp"
+                       android:gravity="end"
+                       android:padding="3dip"
+                       android:text="MSL" />
+                   <TextView
+                       android:layout_weight=".4"
+                       android:layout_width="0dp"
+                       android:padding="3dip" />
+                   <TextView
+                       android:layout_weight=".5"
+                       android:layout_width="0dp"
+                       android:padding="3dip"
+                       android:text="Micro Step Left" />
+               </TableRow>
+
+               <!--CE-->
+               <TableRow
+                   android:layout_width="match_parent"
+                   android:layout_height="0dp"
+                   android:layout_weight="1" >
+                   <TextView
+                       android:layout_weight=".3"
+                       android:layout_width="0dp"
+                       android:gravity="end"
+                       android:padding="3dip"
+                       android:text="CE" />
+                   <TextView
+                       android:layout_weight=".4"
+                       android:layout_width="0dp"
+                       android:padding="3dip" />
+                   <TextView
+                       android:layout_weight=".5"
+                       android:layout_width="0dp"
+                       android:padding="3dip"
+                       android:text="Critical Edge" />
+               </TableRow>
+
+               <!--CH-->
+               <TableRow
+                   android:background="#e4f2fb"
+                   android:layout_width="match_parent"
+                   android:layout_height="0dp"
+                   android:layout_weight="1" >
+
+                   <TextView
+                       android:layout_weight=".3"
+                       android:layout_width="0dp"
+                       android:gravity="end"
+                       android:padding="3dip"
+                       android:text="CH" />
+                   <TextView
+                       android:layout_weight=".4"
+                       android:layout_width="0dp"
+                       android:padding="3dip"
+                       />
+                   <TextView
+                       android:layout_weight=".5"
+                       android:layout_width="0dp"
+                       android:padding="3dip"
+                       android:text="Criticial Hit" />
+               </TableRow>
+
+               <!--GuardImpact-->
+               <TableRow
+                   android:layout_width="match_parent"
+                   android:layout_height="0dp"
+                   android:layout_weight="1" >
+
+                   <TextView
+                       android:layout_weight=".3"
+                       android:layout_width="0dp"
+                       android:gravity="end"
+                       android:padding="3dip"
+                       android:text="GI" />
+                   <TextView
+                       android:layout_weight=".4"
+                       android:layout_width="0dp"
+                       android:padding="3dip"
+                       />
+                   <TextView
+                       android:layout_weight=".5"
+                       android:layout_width="0dp"
+                       android:padding="3dip"
+                       android:text="Guard Impact" />
+               </TableRow>
+
+               <!--Resist Impact-->
+               <TableRow
+                   android:background="#e4f2fb"
+                   android:layout_width="match_parent"
+                   android:layout_height="0dp"
+                   android:layout_weight="1" >
+
+                   <TextView
+                       android:layout_weight=".3"
+                       android:layout_width="0dp"
+                       android:gravity="end"
+                       android:padding="3dip"
+                       android:text="RI" />
+                   <TextView
+                       android:layout_weight=".4"
+                       android:layout_width="0dp"
+                       android:padding="3dip" />
+                   <TextView
+                       android:layout_weight=".5"
+                       android:layout_width="0dp"
+                       android:padding="3dip"
+                       android:text="Reverse Impact" />
+               </TableRow>
+
+               <!--Knockdown-->
+               <TableRow
+                   android:layout_width="match_parent"
+                   android:layout_height="0dp"
+                   android:layout_weight="1" >
+
+                   <TextView
+                       android:layout_weight=".3"
+                       android:layout_width="0dp"
+                       android:gravity="end"
+                       android:padding="3dip"
+                       android:text="KND" />
+                   <TextView
+                       android:layout_weight=".4"
+                       android:layout_width="0dp"
+                       android:padding="3dip" />
+                   <TextView
+                       android:layout_weight=".5"
+                       android:layout_width="0dp"
+                       android:padding="3dip"
+                       android:text="Knockdown" />
+               </TableRow>
+
+               <!--LH-->
+               <TableRow
+                   android:background="#e4f2fb"
+                   android:layout_width="match_parent"
+                   android:layout_height="0dp"
+                   android:layout_weight="1" >
+
+                   <TextView
+                       android:layout_weight=".3"
+                       android:layout_width="0dp"
+                       android:gravity="end"
+                       android:padding="3dip"
+                       android:text="LH" />
+                   <TextView
+                       android:layout_weight=".4"
+                       android:layout_width="0dp"
+                       android:padding="3dip" />
+                   <TextView
+                       android:layout_weight=".5"
+                       android:layout_width="0dp"
+                       android:padding="3dip"
+                       android:text="Lethal Hit" />
+               </TableRow>
+
+               <!--Natural Combo-->
+               <TableRow
+                   android:layout_width="match_parent"
+                   android:layout_height="0dp"
+                   android:layout_weight="1" >
+
+                   <TextView
+                       android:layout_weight=".3"
+                       android:layout_width="0dp"
+                       android:gravity="end"
+                       android:padding="3dip"
+                       android:text="NC" />
+                   <TextView
+                       android:layout_weight=".4"
+                       android:layout_width="0dp"
+                       android:padding="3dip" />
+                   <TextView
+                       android:layout_weight=".5"
+                       android:layout_width="0dp"
+                       android:padding="3dip"
+                       android:text="Natural Combo" />
+               </TableRow>
+
+               <!--Nat Counter Combo-->
+               <TableRow
+                   android:background="#e4f2fb"
+                   android:layout_width="match_parent"
+                   android:layout_height="0dp"
+                   android:layout_weight="1" >
+
+                   <TextView
+                       android:layout_weight=".3"
+                       android:layout_width="0dp"
+                       android:gravity="end"
+                       android:padding="3dip"
+                       android:text="NCC" />
+                   <TextView
+                       android:layout_weight=".4"
+                       android:layout_width="0dp"
+                       android:padding="3dip" />
+                   <TextView
+                       android:layout_weight=".5"
+                       android:layout_width="0dp"
+                       android:padding="3dip"
+                       android:text="Natural Counter Combo" />
+               </TableRow>
+
+               <!--Okizeme-->
+               <TableRow
+                   android:layout_width="match_parent"
+                   android:layout_height="0dp"
+                   android:layout_weight="1" >
+
+                   <TextView
+                       android:layout_weight=".3"
+                       android:layout_width="0dp"
+                       android:gravity="end"
+                       android:padding="3dip"
+                       android:text="Oki" />
+                   <TextView
+                       android:layout_weight=".4"
+                       android:layout_width="0dp"
+                       android:padding="3dip" />
+                   <TextView
+                       android:layout_weight=".5"
+                       android:layout_width="0dp"
+                       android:padding="3dip"
+                       android:text="Okizeme" />
+               </TableRow>
+
+               <!--TechJump-->
+               <TableRow
+                   android:background="#e4f2fb"
+                   android:layout_width="match_parent"
+                   android:layout_height="0dp"
+                   android:layout_weight="1" >
+
+                   <TextView
+                       android:layout_weight=".3"
+                       android:layout_width="0dp"
+                       android:gravity="end"
+                       android:padding="3dip"
+                       android:text="TJ" />
+                   <TextView
+                       android:layout_weight=".4"
+                       android:layout_width="0dp"
+                       android:padding="3dip" />
+                   <TextView
+                       android:layout_weight=".5"
+                       android:layout_width="0dp"
+                       android:padding="3dip"
+                       android:text="Tech Jump" />
+               </TableRow>
+
+               <!--TechStep-->
+               <TableRow
+                   android:layout_width="match_parent"
+                   android:layout_height="0dp"
+                   android:layout_weight="1" >
+
+                   <TextView
+                       android:layout_weight=".3"
+                       android:layout_width="0dp"
+                       android:gravity="end"
+                       android:padding="3dip"
+                       android:text="TS" />
+                   <TextView
+                       android:layout_weight=".4"
+                       android:layout_width="0dp"
+                       android:padding="3dip" />
+                   <TextView
+                       android:layout_weight=".5"
+                       android:layout_width="0dp"
+                       android:padding="3dip"
+                       android:text="Tech Step" />
+               </TableRow>
+
+               <!--TechCrouch-->
+               <TableRow
+                   android:background="#e4f2fb"
+                   android:layout_width="match_parent"
+                   android:layout_height="0dp"
+                   android:layout_weight="1" >
+
+                   <TextView
+                       android:layout_weight=".3"
+                       android:layout_width="0dp"
+                       android:gravity="end"
+                       android:padding="3dip"
+                       android:text="TC" />
+                   <TextView
+                       android:layout_weight=".4"
+                       android:layout_width="0dp"
+                       android:padding="3dip" />
+                   <TextView
+                       android:layout_weight=".5"
+                       android:layout_width="0dp"
+                       android:padding="3dip"
+                       android:text="Tech Crouch" />
+               </TableRow>
+
+               <!--While Standing-->
+               <TableRow
+                   android:layout_width="match_parent"
+                   android:layout_height="0dp"
+                   android:layout_weight="1" >
+
+                   <TextView
+                       android:layout_weight=".3"
+                       android:layout_width="0dp"
+                       android:gravity="end"
+                       android:padding="3dip"
+                       android:text="Wr/Ws" />
+                   <TextView
+                       android:layout_weight=".4"
+                       android:layout_width="0dp"
+                       android:padding="3dip" />
+                   <TextView
+                       android:layout_weight=".5"
+                       android:layout_width="0dp"
+                       android:padding="3dip"
+                       android:text="While Rising/Standing" />
+               </TableRow>
+
+               <!--Wall-->
+               <TableRow
+                   android:background="#e4f2fb"
+                   android:layout_width="match_parent"
+                   android:layout_height="0dp"
+                   android:layout_weight="1" >
+                   <TextView
+                       android:layout_weight=".3"
+                       android:layout_width="0dp"
+                       android:gravity="end"
+                       android:padding="3dip"
+                       android:text="W!" />
+                   <TextView
+                       android:layout_weight=".4"
+                       android:layout_width="0dp"
+                       android:padding="3dip" />
+                   <TextView
+                       android:layout_weight=".5"
+                       android:layout_width="0dp"
+                       android:padding="3dip"
+                       android:text="Wall Splat" />
+               </TableRow>
+
+               <!--SoulCharge-->
+               <TableRow
+                   android:layout_width="match_parent"
+                   android:layout_height="0dp"
+                   android:layout_weight="1" >
+                   <TextView
+                       android:layout_weight=".3"
+                       android:layout_width="0dp"
+                       android:gravity="end"
+                       android:padding="3dip"
+                       android:text="SC" />
+                   <TextView
+                       android:layout_weight=".4"
+                       android:layout_width="0dp"
+                       android:padding="3dip" />
+                   <TextView
+                       android:layout_weight=".5"
+                       android:layout_width="0dp"
+                       android:padding="3dip"
+                       android:text="Soul Charge" />
+               </TableRow>
+
+               <!--Soul Attack-->
+               <TableRow
+                   android:background="#e4f2fb"
+                   android:layout_width="match_parent"
+                   android:layout_height="0dp"
+                   android:layout_weight="1" >
+                   <TextView
+                       android:layout_weight=".3"
+                       android:layout_width="0dp"
+                       android:gravity="end"
+                       android:padding="3dip"
+                       android:text="SA" />
+                   <TextView
+                       android:layout_weight=".4"
+                       android:layout_width="0dp"
+                       android:padding="3dip" />
+                   <TextView
+                       android:layout_weight=".5"
+                       android:layout_width="0dp"
+                       android:padding="3dip"
+                       android:text="Soul Attack" />
+               </TableRow>
+
+               <!--Held Button-->
+               <TableRow
+                   android:layout_width="match_parent"
+                   android:layout_height="0dp"
+                   android:layout_weight="1" >
+                   <TextView
+                       android:layout_weight=".3"
+                       android:layout_width="0dp"
+                       android:gravity="end"
+                       android:padding="3dip"
+                       android:text="[]" />
+                   <TextView
+                       android:layout_weight=".4"
+                       android:layout_width="0dp"
+                       android:padding="3dip" />
+                   <TextView
+                       android:layout_weight=".5"
+                       android:layout_width="0dp"
+                       android:padding="3dip"
+                       android:text="Button is held" />
+               </TableRow>
+
+               <!--Whiff-->
+               <TableRow
+                   android:background="#e4f2fb"
+                   android:layout_width="match_parent"
+                   android:layout_height="0dp"
+                   android:layout_weight="1" >
+                   <TextView
+                       android:layout_weight=".3"
+                       android:layout_width="0dp"
+                       android:gravity="end"
+                       android:padding="3dip"
+                       android:text="()" />
+                   <TextView
+                       android:layout_weight=".4"
+                       android:layout_width="0dp"
+                       android:padding="3dip" />
+                   <TextView
+                       android:layout_weight=".5"
+                       android:layout_width="0dp"
+                       android:padding="3dip"
+                       android:text="Whiff Combo/Move" />
+               </TableRow>
+
+               <!--Slide Input-->
+               <TableRow
+                   android:layout_width="match_parent"
+                   android:layout_height="0dp"
+                   android:layout_weight="1" >
+                   <TextView
+                       android:layout_weight=".3"
+                       android:layout_width="0dp"
+                       android:gravity="end"
+                       android:padding="3dip"
+                       android:text="aB" />
+                   <TextView
+                       android:layout_weight=".4"
+                       android:layout_width="0dp"
+                       android:padding="3dip" />
+                   <TextView
+                       android:layout_weight=".5"
+                       android:layout_width="0dp"
+                       android:padding="3dip"
+                       android:text="Slide Input" />
+               </TableRow>
+
+               <!--Full Crouch-->
+               <TableRow
+                   android:background="#e4f2fb"
+                   android:layout_width="match_parent"
+                   android:layout_height="0dp"
+                   android:layout_weight="1" >
+                   <TextView
+                       android:layout_weight=".3"
+                       android:layout_width="0dp"
+                       android:gravity="end"
+                       android:padding="3dip"
+                       android:text="FC" />
+                   <TextView
+                       android:layout_weight=".4"
+                       android:layout_width="0dp"
+                       android:padding="3dip" />
+                   <TextView
+                       android:layout_weight=".5"
+                       android:layout_width="0dp"
+                       android:padding="3dip"
+                       android:text="Full Crouch" />
+               </TableRow>
+
+               <!--Instant Full Crouch-->
+               <TableRow
+                   android:layout_width="match_parent"
+                   android:layout_height="0dp"
+                   android:layout_weight="1" >
+                   <TextView
+                       android:layout_weight=".3"
+                       android:layout_width="0dp"
+                       android:gravity="end"
+                       android:padding="3dip"
+                       android:text="iFC" />
+                   <TextView
+                       android:layout_weight=".4"
+                       android:layout_width="0dp"
+                       android:padding="3dip" />
+                   <TextView
+                       android:layout_weight=".5"
+                       android:layout_width="0dp"
+                       android:padding="3dip"
+                       android:text="Instant Full Crouch" />
+               </TableRow>
+
+               <!--SideStep-->
+               <TableRow
+                   android:background="#e4f2fb"
+                   android:layout_width="match_parent"
+                   android:layout_height="0dp"
+                   android:layout_weight="1" >
+                   <TextView
+                       android:layout_weight=".3"
+                       android:layout_width="0dp"
+                       android:gravity="end"
+                       android:padding="3dip"
+                       android:text="SS" />
+                   <TextView
+                       android:layout_weight=".4"
+                       android:layout_width="0dp"
+                       android:padding="3dip" />
+                   <TextView
+                       android:layout_weight=".5"
+                       android:layout_width="0dp"
+                       android:padding="3dip"
+                       android:text="Side Step" />
+               </TableRow>
+
+               <!--Force Block-->
+               <TableRow
+                   android:layout_width="match_parent"
+                   android:layout_height="0dp"
+                   android:layout_weight="1" >
+                   <TextView
+                       android:layout_weight=".3"
+                       android:layout_width="0dp"
+                       android:gravity="end"
+                       android:padding="3dip"
+                       android:text="FB" />
+                   <TextView
+                       android:layout_weight=".4"
+                       android:layout_width="0dp"
+                       android:padding="3dip" />
+                   <TextView
+                       android:layout_weight=".5"
+                       android:layout_width="0dp"
+                       android:padding="3dip"
+                       android:text="Force Block" />
+               </TableRow>
+
+               <!-- Padding Row -->
+               <TableRow>
+                   <TextView
+                       />
+               </TableRow>
+
+               <!--Cass Terminology-->
+               <TableRow
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:gravity="center_horizontal"
+                   android:background="@android:color/holo_blue_light" >
+                   <TextView
+                       android:layout_column="0"
+                       android:layout_gravity="center"
+                       android:padding="3dip"
+                       android:text="@string/cass_terms" />
+               </TableRow>
+
+               <!--Divine Force-->
+               <TableRow
+                   android:background="#e4f2fb"
+                   android:layout_width="match_parent"
+                   android:layout_height="0dp"
+                   android:layout_weight="1" >
+                   <TextView
+                       android:layout_weight=".3"
+                       android:layout_width="0dp"
+                       android:gravity="end"
+                       android:padding="3dip"
+                       android:text="DF" />
+                   <TextView
+                       android:layout_weight=".4"
+                       android:layout_width="0dp"
+                       android:padding="3dip" />
+                   <TextView
+                       android:layout_weight=".5"
+                       android:layout_width="0dp"
+                       android:padding="3dip"
+                       android:text="Divine Force" />
+               </TableRow>
+
+               <!--Angel Step-->
+               <TableRow
+                   android:layout_width="match_parent"
+                   android:layout_height="0dp"
+                   android:layout_weight="1" >
+                   <TextView
+                       android:layout_weight=".3"
+                       android:layout_width="0dp"
+                       android:gravity="end"
+                       android:padding="3dip"
+                       android:text="AS" />
+                   <TextView
+                       android:layout_weight=".4"
+                       android:layout_width="0dp"
+                       android:padding="3dip" />
+                   <TextView
+                       android:layout_weight=".5"
+                       android:layout_width="0dp"
+                       android:padding="3dip"
+                       android:text="Angel Step (236)" />
+               </TableRow>
+
+               <!--Angel Twirl-->
+               <TableRow
+                   android:background="#e4f2fb"
+                   android:layout_width="match_parent"
+                   android:layout_height="0dp"
+                   android:layout_weight="1" >
+                   <TextView
+                       android:layout_weight=".3"
+                       android:layout_width="0dp"
+                       android:gravity="end"
+                       android:padding="3dip"
+                       android:text="AT" />
+                   <TextView
+                       android:layout_weight=".4"
+                       android:layout_width="0dp"
+                       android:padding="3dip" />
+                   <TextView
+                       android:layout_weight=".5"
+                       android:layout_width="0dp"
+                       android:padding="3dip"
+                       android:text="Angel Twirl (236)" />
+               </TableRow>
+
+               <!--Titanic Struggle-->
+               <TableRow
+                   android:layout_width="match_parent"
+                   android:layout_height="0dp"
+                   android:layout_weight="1" >
+                   <TextView
+                       android:layout_weight=".3"
+                       android:layout_width="0dp"
+                       android:gravity="end"
+                       android:padding="3dip"
+                       android:text="TS" />
+                   <TextView
+                       android:layout_weight=".4"
+                       android:layout_width="0dp"
+                       android:padding="3dip" />
+                   <TextView
+                       android:layout_weight=".5"
+                       android:layout_width="0dp"
+                       android:padding="3dip"
+                       android:text="Titanic Struggle" />
+               </TableRow>
            </TableLayout>
 
+           <!--System Notation Graphic-->
            <ImageView
                android:adjustViewBounds="true"
+               android:layout_marginTop="20dp"
+               android:layout_marginBottom="20dp"
                android:layout_width="match_parent"
                android:layout_height="wrap_content"
                android:contentDescription="@string/notation_image_desc"
                android:src="@drawable/number_annotation" />
+
+           <TextView
+               android:id="@+id/patch_notes_t_view"
+               android:textSize="48sp"
+               android:fontFamily="@font/soul"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="8dp"
+               android:layout_gravity="center_horizontal"
+               android:text="@string/patch_notes"/>
        </LinearLayout>
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

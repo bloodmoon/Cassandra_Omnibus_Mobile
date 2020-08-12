@@ -36,4 +36,9 @@
     <string name="sm">SM</string>
     <string name="sl">SL</string>
     <string name="m">M</string>
+    <string name="general_sys_terms">General System Terminology</string>
+    <string name="notation_image_desc">General System Notation</string>
+    <string name="_8wr">8WR</string>
+    <string name="_8_way_run">8 Way Run</string>
+    <string name="cass_terms">Cassandra Specific Terminology</string>
 </resources>
