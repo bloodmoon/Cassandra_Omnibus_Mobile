@@ -1,0 +1,2 @@
+rootProject.name='Cassandra Omnibus Mobile'
+include ':app'
