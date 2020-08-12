@@ -30,319 +30,353 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/patch_notes_tview">
 
-        <!--General Info Table -->
-        <TableLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="24dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintVertical_bias="0.020" >
+        <!--LinearLayout Container for multiple children in ScrollView-->
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:id="@+id/gen_info_linear_container"
+           android:orientation="vertical" >
 
-            <!--Top Header (Universal Basic Buttons) -->
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center_horizontal"
-                android:layout_weight="1"
-                android:background="@android:color/holo_blue_light">
+           <!--General Info Table -->
+           <TableLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="24dp"
+               app:layout_constraintBottom_toBottomOf="parent"
+               app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintVertical_bias="0.020" >
 
-                <TextView
-                    android:layout_column="0"
-                    android:layout_gravity="center"
-                    android:padding="3dip"
-                    android:text="@string/basic_buttons_heading" />
-            </TableRow>
+               <!--Top Header (Universal Basic Buttons) -->
+               <TableRow
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:gravity="center_horizontal"
+                   android:layout_weight="1"
+                   android:background="@android:color/holo_blue_light">
 
-            <!--Button Definitions based on Default Controller Layout -->
+                   <TextView
+                       android:layout_column="0"
+                       android:layout_gravity="center"
+                       android:padding="3dip"
+                       android:text="@string/basic_buttons_heading" />
+               </TableRow>
 
-            <!-- A Button -->
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="1" >
+               <!--Button Definitions based on Default Controller Layout -->
 
-                <TextView
-                    android:layout_weight=".3"
-                    android:layout_width="0dp"
-                    android:gravity="end"
-                    android:padding="3dip"
-                    android:text="@string/a_button" />
-                <TextView
-                    android:layout_weight=".4"
-                    android:layout_width="0dp"
-                    android:padding="3dip"
-                    />
-                <TextView
-                    android:layout_weight=".5"
-                    android:layout_width="0dp"
-                    android:padding="3dip"
-                    android:text="@string/basic_hori" />
-            </TableRow>
+               <!-- A Button -->
+               <TableRow
+                   android:layout_width="match_parent"
+                   android:layout_height="0dp"
+                   android:layout_weight="1" >
 
-            <!-- B Button -->
-            <TableRow
-                android:background="#e4f2fb"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" >
-                <TextView
-                    android:layout_weight=".3"
-                    android:layout_width="0dp"
-                    android:gravity="end"
-                    android:padding="3dip"
-                    android:text="@string/b_button" />
-                <TextView
-                    android:layout_weight=".4"
-                    android:layout_width="0dp"
-                    android:padding="3dip"/>
-                <TextView
-                    android:layout_weight=".5"
-                    android:layout_width="0dp"
-                    android:padding="3dip"
-                    android:text="@string/basic_vert" />
-            </TableRow>
+                   <TextView
+                       android:layout_weight=".3"
+                       android:layout_width="0dp"
+                       android:gravity="end"
+                       android:padding="3dip"
+                       android:text="@string/a_button" />
+                   <TextView
+                       android:layout_weight=".4"
+                       android:layout_width="0dp"
+                       android:padding="3dip"
+                       />
+                   <TextView
+                       android:layout_weight=".5"
+                       android:layout_width="0dp"
+                       android:padding="3dip"
+                       android:text="@string/basic_hori" />
+               </TableRow>
 
-            <!-- K Button -->
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" >
-                <TextView
-                    android:layout_weight=".3"
-                    android:layout_width="0dp"
-                    android:gravity="end"
-                    android:padding="3dip"
-                    android:text="@string/k_button" />
-                <TextView
-                    android:layout_weight=".4"
-                    android:layout_width="0dp"
-                    android:padding="3dip"/>
-                <TextView
-                    android:layout_weight=".5"
-                    android:layout_width="0dp"
-                    android:padding="3dip"
-                    android:text="@string/basic_kick" />
-            </TableRow>
+               <!-- B Button -->
+               <TableRow
+                   android:background="#e4f2fb"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent" >
+                   <TextView
+                       android:layout_weight=".3"
+                       android:layout_width="0dp"
+                       android:gravity="end"
+                       android:padding="3dip"
+                       android:text="@string/b_button" />
+                   <TextView
+                       android:layout_weight=".4"
+                       android:layout_width="0dp"
+                       android:padding="3dip"/>
+                   <TextView
+                       android:layout_weight=".5"
+                       android:layout_width="0dp"
+                       android:padding="3dip"
+                       android:text="@string/basic_vert" />
+               </TableRow>
 
-            <!-- G Button -->
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="#e4f2fb" >
-                <TextView
-                    android:layout_weight=".3"
-                    android:layout_width="0dp"
-                    android:gravity="end"
-                    android:padding="3dip"
-                    android:text="@string/g_button" />
-                <TextView
-                    android:layout_weight=".4"
-                    android:layout_width="0dp"
-                    android:padding="3dip"/>
-                <TextView
-                    android:layout_weight=".5"
-                    android:layout_width="0dp"
-                    android:padding="3dip"
-                    android:text="@string/basic_guard" />
-            </TableRow>
+               <!-- K Button -->
+               <TableRow
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent" >
+                   <TextView
+                       android:layout_weight=".3"
+                       android:layout_width="0dp"
+                       android:gravity="end"
+                       android:padding="3dip"
+                       android:text="@string/k_button" />
+                   <TextView
+                       android:layout_weight=".4"
+                       android:layout_width="0dp"
+                       android:padding="3dip"/>
+                   <TextView
+                       android:layout_weight=".5"
+                       android:layout_width="0dp"
+                       android:padding="3dip"
+                       android:text="@string/basic_kick" />
+               </TableRow>
 
-            <!-- Padding Row -->
-            <TableRow>
-                <TextView
-                    />
-            </TableRow>
+               <!-- G Button -->
+               <TableRow
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:background="#e4f2fb" >
+                   <TextView
+                       android:layout_weight=".3"
+                       android:layout_width="0dp"
+                       android:gravity="end"
+                       android:padding="3dip"
+                       android:text="@string/g_button" />
+                   <TextView
+                       android:layout_weight=".4"
+                       android:layout_width="0dp"
+                       android:padding="3dip"/>
+                   <TextView
+                       android:layout_weight=".5"
+                       android:layout_width="0dp"
+                       android:padding="3dip"
+                       android:text="@string/basic_guard" />
+               </TableRow>
 
-            <!-- Basic Move Properties -->
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:gravity="center_horizontal"
-                android:background="@android:color/holo_blue_light">
+               <!-- Padding Row -->
+               <TableRow>
+                   <TextView
+                       />
+               </TableRow>
 
-                <TextView
-                    android:layout_column="0"
-                    android:layout_gravity="center"
-                    android:padding="3dip"
-                    android:text="@string/basic_properties_heading" />
-            </TableRow>
+               <!-- Basic Move Properties -->
+               <TableRow
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:gravity="center_horizontal"
+                   android:background="@android:color/holo_blue_light">
 
-            <!-- Highs -->
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="#e4f2fb" >
-                <TextView
-                    android:layout_weight=".3"
-                    android:layout_width="0dp"
-                    android:gravity="end"
-                    android:padding="3dip"
-                    android:text="@string/h" />
-                <TextView
-                    android:layout_weight=".4"
-                    android:layout_width="0dp"
-                    android:padding="3dip"
-                    />
-                <TextView
-                    android:layout_weight=".5"
-                    android:layout_width="0dp"
-                    android:padding="3dip"
-                    android:text="@string/basic_high" />
-            </TableRow>
+                   <TextView
+                       android:layout_column="0"
+                       android:layout_gravity="center"
+                       android:padding="3dip"
+                       android:text="@string/basic_properties_heading" />
+               </TableRow>
 
-            <!-- Notes -->
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:gravity="center_horizontal"
-                android:background="#fefedc">
-                <TextView
-                    android:layout_column="0"
-                    android:layout_gravity="center"
-                    android:padding="3dip"
-                    android:text="@string/basic_high_note" />
-            </TableRow>
+               <!-- Highs -->
+               <TableRow
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:background="#e4f2fb" >
+                   <TextView
+                       android:layout_weight=".3"
+                       android:layout_width="0dp"
+                       android:gravity="end"
+                       android:padding="3dip"
+                       android:text="@string/h" />
+                   <TextView
+                       android:layout_weight=".4"
+                       android:layout_width="0dp"
+                       android:padding="3dip"
+                       />
+                   <TextView
+                       android:layout_weight=".5"
+                       android:layout_width="0dp"
+                       android:padding="3dip"
+                       android:text="@string/basic_high" />
+               </TableRow>
 
-            <!-- Mids -->
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="#e4f2fb" >
-                <TextView
-                    android:layout_weight=".3"
-                    android:layout_width="0dp"
-                    android:gravity="end"
-                    android:padding="3dip"
-                    android:text="@string/m" />
-                <TextView
-                    android:layout_weight=".4"
-                    android:layout_width="0dp"
-                    android:padding="3dip" />
-                <TextView
-                    android:layout_weight=".5"
-                    android:layout_width="0dp"
-                    android:padding="3dip"
-                    android:text="@string/basic_vert" />
-            </TableRow>
+               <!-- Notes -->
+               <TableRow
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:gravity="center_horizontal"
+                   android:background="#fefedc">
+                   <TextView
+                       android:layout_column="0"
+                       android:layout_gravity="center"
+                       android:padding="3dip"
+                       android:text="@string/basic_high_note" />
+               </TableRow>
 
-            <!-- Notes -->
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:gravity="center_horizontal"
-                android:background="#fefedc" >
+               <!-- Mids -->
+               <TableRow
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:background="#e4f2fb" >
+                   <TextView
+                       android:layout_weight=".3"
+                       android:layout_width="0dp"
+                       android:gravity="end"
+                       android:padding="3dip"
+                       android:text="@string/m" />
+                   <TextView
+                       android:layout_weight=".4"
+                       android:layout_width="0dp"
+                       android:padding="3dip" />
+                   <TextView
+                       android:layout_weight=".5"
+                       android:layout_width="0dp"
+                       android:padding="3dip"
+                       android:text="@string/basic_mid" />
+               </TableRow>
 
-                <TextView
-                    android:layout_column="0"
-                    android:layout_gravity="center"
-                    android:padding="3dip"
-                    android:text="@string/basic_mid_note" />
-            </TableRow>
+               <!-- Notes -->
+               <TableRow
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:gravity="center_horizontal"
+                   android:background="#fefedc" >
 
-            <!-- Lows -->
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="#e4f2fb" >
-                <TextView
-                    android:layout_weight=".3"
-                    android:layout_width="0dp"
-                    android:gravity="end"
-                    android:padding="3dip"
-                    android:text="@string/l" />
-                <TextView
-                    android:layout_weight=".4"
-                    android:layout_width="0dp"
-                    android:padding="3dip" />
-                <TextView
-                    android:layout_weight=".5"
-                    android:layout_width="0dp"
-                    android:padding="3dip"
-                    android:text="@string/basic_low" />
-            </TableRow>
+                   <TextView
+                       android:layout_column="0"
+                       android:layout_gravity="center"
+                       android:padding="3dip"
+                       android:text="@string/basic_mid_note" />
+               </TableRow>
 
-            <!-- Notes -->
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:gravity="center_horizontal"
-                android:background="#fefedc" >
+               <!-- Lows -->
+               <TableRow
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:background="#e4f2fb" >
+                   <TextView
+                       android:layout_weight=".3"
+                       android:layout_width="0dp"
+                       android:gravity="end"
+                       android:padding="3dip"
+                       android:text="@string/l" />
+                   <TextView
+                       android:layout_weight=".4"
+                       android:layout_width="0dp"
+                       android:padding="3dip" />
+                   <TextView
+                       android:layout_weight=".5"
+                       android:layout_width="0dp"
+                       android:padding="3dip"
+                       android:text="@string/basic_low" />
+               </TableRow>
 
-                <TextView
-                    android:layout_column="0"
-                    android:layout_gravity="center"
-                    android:padding="3dip"
-                    android:text="@string/basic_low_note" />
-            </TableRow>
+               <!-- Notes -->
+               <TableRow
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:gravity="center_horizontal"
+                   android:background="#fefedc" >
 
-            <!-- Special Mid -->
-            <TableRow
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="#e4f2fb" >
-                <TextView
-                    android:layout_weight=".3"
-                    android:layout_width="0dp"
-                    android:gravity="end"
-                    android:padding="3dip"
-                    android:text="@string/sm" />
-                <TextView
-                    android:layout_weight=".4"
-                    android:layout_width="0dp"
-                    android:padding="3dip" />
-                <TextView
-                    android:layout_weight=".5"
-                    android:layout_width="0dp"
-                    android:padding="3dip"
-                    android:text="@string/basic_s_mid" />
-            </TableRow>
+                   <TextView
+                       android:layout_column="0"
+                       android:layout_gravity="center"
+                       android:padding="3dip"
+                       android:text="@string/basic_low_note" />
+               </TableRow>
 
-            <!-- Notes -->
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:gravity="center_horizontal"
-                android:background="#fefedc" >
-                <TextView
-                    android:layout_column="0"
-                    android:layout_gravity="center"
-                    android:padding="3dip"
-                    android:text="@string/basic_s_mid_note" />
-            </TableRow>
+               <!-- Special Mid -->
+               <TableRow
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:background="#e4f2fb" >
+                   <TextView
+                       android:layout_weight=".3"
+                       android:layout_width="0dp"
+                       android:gravity="end"
+                       android:padding="3dip"
+                       android:text="@string/sm" />
+                   <TextView
+                       android:layout_weight=".4"
+                       android:layout_width="0dp"
+                       android:padding="3dip" />
+                   <TextView
+                       android:layout_weight=".5"
+                       android:layout_width="0dp"
+                       android:padding="3dip"
+                       android:text="@string/basic_s_mid" />
+               </TableRow>
 
-            <!-- Special Low -->
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="#e4f2fb" >
-                <TextView
-                    android:layout_weight=".3"
-                    android:layout_width="0dp"
-                    android:gravity="end"
-                    android:padding="3dip"
-                    android:text="@string/sl" />
-                <TextView
-                    android:layout_weight=".4"
-                    android:layout_width="0dp"
-                    android:padding="3dip" />
-                <TextView
-                    android:layout_weight=".5"
-                    android:layout_width="0dp"
-                    android:padding="3dip"
-                    android:text="@string/basic_s_low" />
-            </TableRow>
+               <!-- Notes -->
+               <TableRow
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:gravity="center_horizontal"
+                   android:background="#fefedc" >
+                   <TextView
+                       android:layout_column="0"
+                       android:layout_gravity="center"
+                       android:padding="3dip"
+                       android:text="@string/basic_s_mid_note" />
+               </TableRow>
 
-            <!-- Notes -->
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:gravity="center_horizontal"
-                android:background="#fefedc" >
-                <TextView
-                    android:layout_column="0"
-                    android:layout_gravity="center"
-                    android:padding="3dip"
-                    android:text="@string/basic_s_low_note" />
-            </TableRow>
-        </TableLayout>
+               <!-- Special Low -->
+               <TableRow
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:background="#e4f2fb" >
+                   <TextView
+                       android:layout_weight=".3"
+                       android:layout_width="0dp"
+                       android:gravity="end"
+                       android:padding="3dip"
+                       android:text="@string/sl" />
+                   <TextView
+                       android:layout_weight=".4"
+                       android:layout_width="0dp"
+                       android:padding="3dip" />
+                   <TextView
+                       android:layout_weight=".5"
+                       android:layout_width="0dp"
+                       android:padding="3dip"
+                       android:text="@string/basic_s_low" />
+               </TableRow>
+
+               <!-- Notes -->
+               <TableRow
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:gravity="center_horizontal"
+                   android:background="#fefedc" >
+                   <TextView
+                       android:layout_column="0"
+                       android:layout_gravity="center"
+                       android:padding="3dip"
+                       android:text="@string/basic_s_low_note" />
+               </TableRow>
+
+               <!-- Padding Row -->
+               <TableRow>
+                   <TextView
+                       />
+               </TableRow>
+
+               <!--General System Terminology-->
+               <TableRow
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:gravity="center_horizontal"
+                   android:background="@android:color/holo_blue_light" >
+                   <TextView
+                       android:layout_column="0"
+                       android:layout_gravity="center"
+                       android:padding="3dip"
+                       android:text="@string/general_sys_terms" />
+               </TableRow>
+           </TableLayout>
+
+           <ImageView
+               android:adjustViewBounds="true"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:contentDescription="@string/notation_image_desc"
+               android:src="@drawable/number_annotation" />
+       </LinearLayout>
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
